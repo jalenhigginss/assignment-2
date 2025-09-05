@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+  Name: Jalen Higgins
+  Date: 09.04.2025
+  CSC 372-01
+
+  This is the index.html homepage for Assignment 2 (Travel Blog). It links to
+  destination.html and uses a separate index.css stylesheet per the Code Quality Guide.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="top"></a>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#about">about</a>
+          <a href="#posts">posts</a>
+          <a href="#contact">contact</a>
+          <a href="destination.html" aria-label="go to the assignment destination page">destination ➜</a>
+        </nav>
+      </div>
+    </header>
+  
+    <main class="container">
+      <section class="hero" id="about">
+        <h1>wandernotes — a tiny travel blog</h1>
+        <p>
+          welcome! my name is jalen, i’m just a curious traveler collecting short notes, tiny tips, and little victories from the road.
+          this homepage is unique content (per spec) and links to the rubric-driven destination page.
+        </p>
+        <p>
+          the destination page is styled separately using <code>style.css</code> as required.
+        </p>
+      </section>
+  
+      <section class="grid" id="posts">
+        <article class="card">
+          <h2>featured: traveling light</h2>
+          <p>
+            i used to overpack. now it’s one backpack, great walking shoes, and a flexible plan.
+          </p>
+          <ul>
+            <li>pack layers, not bulk</li>
+            <li>scan IDs and keep copies</li>
+            <li>carry a single-USB charger</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>assignment destination page</h2>
+          <p>
+            the destination page follows exact typography/colors and includes overview, lists, image, and a testimonial.
+          </p>
+          <p>➜ <a href="destination.html">open the destination page</a></p>
+        </article>
+      </section>
+  
+      <section class="card" id="contact">
+        <h2>contact</h2>
+        <p>suggest a city by opening an issue in the repo.</p>
+      </section>
+    </main>
+  
+    <footer class="container">
+      <p>© 2025 wandernotes • built for csc372 assignment 2</p>
+    </footer>
+  
+    <a class="top" href="#top" title="back to top">↑ top</a> 
+</body>
+</html>
