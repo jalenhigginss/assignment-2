@@ -1,0 +1,46 @@
+/*
+  Name: Jalen Higgins
+  Date: 09.04.2025
+  CSC 372-01
+
+  Styles for index.html (homepage). Separated from HTML to avoid inline styles.
+  Ordered top-to-bottom: generic → element → context → classes → ids.
+*/
+
+/* Generic */
+:root {
+    --accent: #a4a400; /* keep consistent with destination headings/links */
+    --sea: #008e9b;
+    --coral: #ff7f50;
+    --sand: #f5e8cf;
+  }
+  
+  /* Generic */
+  html, body { margin:0; padding:0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#222; background: #f7f7f7; line-height:1.6; }
+  
+  /* Elements */
+  nav a { margin-right: 14px; color: var(--accent); text-decoration: none; font-weight:600; }
+  nav a:hover { text-decoration: underline; }
+  
+  /* Context */
+  header { background: white; border-bottom: 1px solid #e8e8e8; }
+  main.container { padding-top: 8px; }
+  
+  /* Classes (used multiple times) */
+  .container { max-width: 880px; margin: 0 auto; padding: 20px; }
+  .hero { background: white; padding: 28px; border-radius: 14px; box-shadow: 0 2px 14px rgba(0,0,0,.06); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:18px; }
+  .card { background:white; padding:18px; border-radius:14px; box-shadow: 0 1px 10px rgba(0,0,0,.06); border:1px solid #eee; }
+  
+  /* Beachy accents */
+  .hero { border-left: 6px solid var(--sea); }
+  .card:nth-child(1) { border-top: 4px solid var(--sea); }
+  .card:nth-child(2) { border-top: 4px solid var(--coral); }
+  
+  .top { position:fixed; right:16px; bottom:16px; background:var(--accent); color:black; border-radius:999px; padding:10px 14px; text-decoration:none; box-shadow:0 2px 10px rgba(0,0,0,.2); }
+  
+  /* IDs (unique) */
+  #about { }
+  #posts { }
+  #contact { }
